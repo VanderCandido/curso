@@ -1,0 +1,17 @@
+print ('Carteira de Habilitação')
+rodas = int (input('Quntidade de Rodas:'))
+peso = float (input('Peso Bruto em Kg:'))
+pessoas = int (input('Qauntidade de Pessoas no Veículo:'))
+
+if rodas <=3: print ('Categira A')
+elif rodas == 4 and peso <=3500 and pessoas <=8: 
+      print ("Sua Categoria é a 'B'")
+elif rodas >= 4 and  3500 <= peso <=6000:
+      print ("Sua Categoria é a 'C'")
+elif rodas >= 4 and pessoas >=8: 
+      print ("Sua Categoria é a 'D'")
+elif rodas >= 4 and peso >= 6000: 
+      print ("Sua Categoria é a 'E'")
+else:
+    print ('Sem Categoria')
+
