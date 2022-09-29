@@ -1,0 +1,8 @@
+import time
+tempoinicial = 1
+tempofinal = 10
+print('Iniciando contagem para explodir a Bomba')
+for i in range(tempoinicial,tempofinal+1):
+    print (i)
+    time.sleep(1)
+print("***BOOM***")
