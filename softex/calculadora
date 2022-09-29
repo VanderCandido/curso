@@ -11,8 +11,9 @@ def calculadora(n1, n2, ope) :
     elif (ope == 2) : return n1 - n2
     elif (ope == 3) : return n1 * n2
     elif (ope == 4) : return n1 / n2
-    elif (ope <= 0) or (ope > 4) : return "informe um numero de 1 até 4"
-    
-    
+    while (ope >4) or (ope < 0):
+        print (input('Informe um número de 1 até 4'))
+        break
+        
 resultado = calculadora(n1, n2, ope)
 print(resultado)
