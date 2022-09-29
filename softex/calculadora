@@ -1,0 +1,18 @@
+n1 = float (input("Infome o Primeiro número: "))
+n2 = float (input("Infome o Segundo número: "))
+print("1 - Soma")
+print("2 - Subtração")
+print("3 - Multiplicação")
+print("4 - Divisão")
+ope = int (input("Informe qual operação: "))
+
+def calculadora(n1, n2, ope) :
+    if (ope == 1)   : return n1 + n2
+    elif (ope == 2) : return n1 - n2
+    elif (ope == 3) : return n1 * n2
+    elif (ope == 4) : return n1 / n2
+    elif (ope <= 0) or (ope > 4) : return "informe um numero de 1 até 4"
+    
+    
+resultado = calculadora(n1, n2, ope)
+print(resultado)
