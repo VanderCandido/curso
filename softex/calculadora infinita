@@ -38,4 +38,9 @@ while opcao:
         divisao()
     if (opcao==0):
         sair()
+    if (opcao  <0) or (opcao  >4):
+        print ('Essa opção não existe' '\nEscolha uma opção de 0 até 4:')
+        
+        
+        
     
