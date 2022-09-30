@@ -1,0 +1,12 @@
+stop = False
+while stop == False:
+    nome = input("Informe seu Nome:")
+    print("Qual o nao de seu nascimente:")
+    try:
+        ano = int(input())
+        if ano >= 1922 and ano <=2021:
+            stop = True
+            print(nome," você tem ou vai completar:", 2022-ano,'anos')
+       
+    except:
+        print("Você informou um valor inválido, Por favor insira apenas o ano de seu nascimento")
