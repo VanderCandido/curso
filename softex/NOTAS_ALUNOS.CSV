@@ -1,0 +1,15 @@
+aluno,nota_1,nota_2faltas
+aluno_1,	7, 	7 	1
+aluno_2 	3	10 	7
+aluno_3, 	9, 	4, 	2
+aluno_4,	10, 6, 	9
+
+import pandas as pd
+
+df = pd.read_csv("notas_alunos.csv")
+media = (df["nota_1"] + df["nota_2"]) /2
+falta = (df["faltas"])
+if (media >=7) and (falta <5):
+    print("Aprovado")
+elif(media < 7) and (falta >5):
+    print("Reprovado")
