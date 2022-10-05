@@ -1,0 +1,22 @@
+import random
+
+def bubble_sort(valor):
+    print('')
+    elementos = len(valor) - 1
+    ordem = False
+    troca = 0
+    while ordem == False:
+        for i in range(elementos):
+            if valor[i] > valor[i+1]:
+                troca = valor[i]
+                valor[i] = valor[i+1]
+                valor[i+1] = troca
+                print(valor)
+    return valor
+
+valor = []
+for i in range(0,10,1):
+    valor.append(random.randint(0,100))
+print('')
+print(valor)
+bubble_sort(valor)
