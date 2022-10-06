@@ -1,0 +1,14 @@
+https://www.codingame.com/playgrounds/52723/programacao-python-parte-3---prof--marco-vaz/numeros-aleatorios
+# comando de ordenar e chamar numeros de forma aleatoria
+
+import random
+
+# Criar uma lista com números entre 1 e 52
+cartas = list(range(1,53))
+
+print(cartas)
+
+# Embaralha a lista de números 
+random.shuffle(cartas)
+
+print(cartas)
