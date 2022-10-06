@@ -3,7 +3,7 @@ import random
 def insertionsort (array):
     for step in range(1, len(array)):
         key = array[step]
-        j = step -1
+        j = step - 1
         
         
         while j >= 0 and key < array[j]:
@@ -12,7 +12,7 @@ def insertionsort (array):
             
         array[j + 1] = key
         
-data = [29, 1, 4, 5, 7, 2, 30, 21, 25, 17, 27, 13, 14, 15, 14, 16, 18, 24, 26, 6, 22, 9, 23, 12, 11, 8, 28, 3, 19, 26]
+data = [29, 1, 5, 7, 21, 25, 17, 27, 13, 15, 9, 23, 11, 3, 19, 31, 37, 33, 47, 35, 45, 49, 39, 55, 65, 67, 51, 69, 61, 53 ]
 insertionsort(data)
 print ('Array em ordem crescente')
 print (data)
