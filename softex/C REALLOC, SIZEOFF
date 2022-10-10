@@ -1,0 +1,35 @@
+int* vetor (int 10){
+     int *ptrV;
+    ptrV = (int *) malloc (10 * sizeof (int));
+     return ptrV;
+}
+
+int main(){
+     int *ptrVetor;
+    ptrVetor = vetor(10) ;
+ 
+    for(int i=0;i<10;i++){
+		ptrVetor[i]= i+1;
+        printf("%d ", ptrVetor[i]);
+    }
+    printf("\n");
+    
+    ptrVetor = (int *) realloc(ptrVetor, 22 * sizeof (int));         
+    for(int i=0;i<22;i++){
+		ptrVetor[i]= i+1;
+        printf("%d ", ptrVetor[i]);
+    }
+     free (ptrVetor ) ;
+ 
+    return 0;
+}
+
+int *ptr; 
+ 
+ptr = (int *) malloc(10 * sizeof (int)); 
+ 
+ptr = (int *) realloc(ptr , 22 * sizeof (int)); 
+free(): void free(void *ptr);
+
+
+                           
