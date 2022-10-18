@@ -1,0 +1,57 @@
+class monitor:
+    
+    atributos()
+        marca: CARACTERE;
+        cor: CARACTERE;
+        conectado: logico;
+        tamanho: real;
+fimclass
+
+    método()
+        melhorar imagem;
+        trabalhar;
+        transmitir imagem;
+fimmetodo
+    
+class lápis()
+
+    atributos:
+        modelo: caractere;
+        tamanho: real;
+        cor: inteiro;
+fimclass   
+    
+    métodos()
+        desenhar;
+        escrever;
+        trabalhar;
+
+fimmetodo
+
+class tralbalho()
+
+    atributos:
+        tempo: real;
+        local: caracter;
+        cargo: logico;
+
+    métodos:
+        trabalhar;
+        resolver problemas relacionados a empresa;
+        pensar;
+  
+fimmetodo
+
+class série()
+
+    atributos:
+        tema: caracetere;
+        sinopse: caractere ;
+        tempo: real;
+
+
+    métodos:
+        divertir;
+        assistir;
+        maratonar;
+fimmetodo
