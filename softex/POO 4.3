@@ -1,0 +1,26 @@
+class Carro:
+  def __init__(self):
+    self.marca = 'Toyota'
+    self.quantidade = 50
+
+  def get_inf(self):
+    return self.marca, self.quantidade
+
+  def set_nova_inf(self, nova_marca, nova_quant):
+    self.marca = nova_marca
+    if(nova_quant >= 50):
+      self.quantidade = 50
+    else:
+      self.quantidade = nova_quant
+
+elemento = Carro()
+
+print("A concerssionária tem o fabrincante: ")
+print(elemento.get_inf())
+
+novo_item = input("Digite o nome de um novo fabricante de  Carro: ")
+nova_quant = int(input("Digite a quantidade de Carros(A Garagem suporta até 50 carros): "))
+elemento.set_nova_inf(novo_item,nova_quant)
+
+print("A loja tem esse mais novo fabricante de carro: ")
+print(elemento.get_inf())
