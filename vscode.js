@@ -1,0 +1,1 @@
+console.log("Escolhi o vscode pela versatilidade e pela proposta dada pelo próprio curso de logica e programação da softex, vale ressaltar a contribuição do professor íkaro pela contribuição para melhorar o uso no vscode.");
