@@ -1,0 +1,15 @@
+package net.HBOMAX
+
+public class conteudo_digital{
+  String serie;
+  int episodio;
+}
+
+
+
+package br.com.joaoeletormoveis
+
+public class loja{
+  String moveis;
+  String eletro;
+}
