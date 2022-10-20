@@ -1,0 +1,54 @@
+Prototype
+Este padrão foi criado com o objetivo de especificar os tipos de objetos a serem criados usando uma instância-protótipo e criar novos objetos pela cópia desse protótipo.
+Poderia compara o uso deste padrão a algum editor de notas musicais, um editor poderia customizar as notas musicais, poderia ter uma paleta de ferramentas para adicionar esses objetos de música à partitura. A paleta também incluiria ferramentas para selecionar, mover e manipular objetos de música de outra forma. O usuário clicaria na ferramenta de uma semínima para adicionar semínimas à partitura. Ou poderia usar a ferramenta de movimentação para mover uma nota para cima ou para baixo nas linhas de pauta, alterando seu registro sonoro. 
+ Mas poderia haver alguns problemas relacionados a edição do projeto até chegar em um projeto finalizado, para evitar esses erros na finalização, sõa criados subclasses que permitiria o usuário ciriar e adicionar mais notas musicais, assim poderia após o processo, apenas clonar e adicionar as mudanças ao documento, Assim, em nosso editor musical, cada ferramenta para criar um objeto musical que é iniciada com um protótipo diferente. Cada parte produzirá um objeto musical clonando o seu protótipo e adicionando o clone à partitura, criando protótipos antes do resultado final   
+Quando usar Prototype?
+Use o padrão Prototype quando um sistema tiver que ser independente de como os seus produtos são criados, compostos e representados; e:
+ 
+•	Quando as classes a instanciar forem especificadas em tempo de execução, por exemplo, por carga dinâmica;
+•	Para evitar a construção de uma hierarquia de classes de fábricas paralela à hierarquia de classes de produto;
+•	Quando as instâncias de uma classe puderem ter uma dentre poucas combinações diferentes de estados. Pode ser mais conveniente instalar um número correspondente de protótipos e cloná-los, ao invés de instanciar a classe manualmente, cada vez com um estado apropriado.
+Estrutura
+ 
+ 
+ 
+
+•	Protótipo (Graphic): declara uma interface para clonar a si próprio.
+•	ProtótipoConcreto (Staff, WholeNote, HalfNote): implementa uma operação para clonar a si próprio.
+•	Cliente (GraphicTool): cria um novo objeto solicitando a um protótipo que clone a si próprio.
+Exemplo de código
+Definiremos uma subclasse CarPrototypeFactory de uma classe CarFactory. CarPrototypeFactory será iniciada com protótipos dos objetos que criará, de maneira que não tenhamos que criar subclasses somente para mudar as classes de pneus ou motores que ela cria.
+A CarPrototypeFactory aumenta a interface de CarFactory com um construtor que aceita protótipos como argumentos:
+ 
+Public Class CarPrototypeFactory
+    Implements ICarFactory
+ 
+    Private _PrototipoMotor As Motor
+    Private _PrototipoPneu As Pneu
+ 
+End Class
+ 
+O construtor simplesmente inicia seus protótipos:
+ 
+Public Sub New(ByVal pPneu As Pneu, ByVal pMotor As Motor)
+ 
+    _PrototipoPneu = pPneu
+    _PrototipoMotor = pMotor
+ 
+End Sub
+ 
+
+
+
+As funções para a criação de pneus e motor são semelhantes: cada uma clona um protótipo e então o inicia. Aqui estão as definições de CriarMotor e CriarPneu.
+ 
+Public Function CriarMotor() As Motor
+    Dim MeuMotor As Motor = _PrototipoMotor.Clonar
+    MeuMotor.Potencia = Motor.Potencia.1000
+    Return MeuMotor
+End Function
+ 
+Public Function CriarPneu() As Pneu
+    Return _PrototipoPneu.Clonar
+End Function
+
