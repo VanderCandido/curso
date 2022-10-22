@@ -1,0 +1,52 @@
+**************************PROGAMA MÉDIA DE 3 NOTAS ****************************
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÉDIA</title>
+</head>
+<body>
+    <script>
+        var n1 = parseFloat(prompt("Insira a primeira nota: "));
+        var n2 = parseFloat(prompt("Insira a segunda nota: "));
+        var n3 = parseFloat(prompt("Insira a terceira nota: "));
+        var media = (n1+n2+n3)/3;
+        var resultado = (media >= 7) ? "APROVADO" : "REPROVADO" 
+
+    alert ("A MÉDIA DO ALUNO FOI "  +  media  +  ", E ELE FOI " + resultado);
+    </script>
+
+    
+</body>
+<h1> <font color="blue">SE HOUVER ERRO RECARREGUE A PÁGINA MÉDIA E INSIRA AS NOTAS NOVAMENTE</font> </h1>
+</html>
+
+******************* Programa que o aluno deve escrever duas notas e o retorno informa a nota mínima que ele deve tirar na próxima prova para poder passar com nota sete.*******************************
+
+
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÉDIA</title>
+</head>
+<body>
+    <script>
+        var n1 = parseFloat(prompt("Digite a primeira nota: "));
+        var n2 = parseFloat(prompt("Digite a segunda nota: "));
+        var media = (n1+n2)/2;
+        var notas = n1 + n2;
+        var resta = 21 - notas;
+
+        alert("A nota mínima que precisa tirar para ficar com a média 7 é: "  +  resta);
+            
+    </script>
+
+    
+</body>
+<h1> <font color="blue">SE HOUVER ERRO RECARREGUE A PÁGINA MÉDIA E INSIRA AS NOTAS NOVAMENTE</font> </h1>
+</html>
