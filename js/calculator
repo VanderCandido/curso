@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculadora</title>
 </head>
-<h1> <font color="red">_____________CALCULADORA_____________</font> </h1>
+<h1> <font color="">_____________CALCULADORA_____________</font> </h1>
      
 <body>
     <h1> <font color="green">_____________CALCULADORA_____________</font> </h1>
@@ -47,5 +47,5 @@
     </script>
     
 </body>
-<h1> <font color="blue">_____________CALCULADORA_____________</font> </h1>
-</html>
+<h1> <font color="blue">SE HOUVER ERRO RECARREGUE A PÁGINA DA CALCULADORA E INSIRA OS NÚMEROS NOVAMENTE</font> </h1>
+</html> 
