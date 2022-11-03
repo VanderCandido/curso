@@ -1,12 +1,12 @@
 var banco = {
-    conta: "12.345-67",
-    saldo: 245.00,
+    conta: "29.9519-70",
+    saldo: 950.00,
     tipo: "Corrente",
-    agencia: "1234-5"
+    agencia: "5432-1"
 }
 
 var buscar_saldo = function(){
-    console.log("Saldo: " + banco.saldo.toFixed(2))
+    console.log("Saldo: " + banco.saldo)
 }
 
 var deposito = function(valor){
