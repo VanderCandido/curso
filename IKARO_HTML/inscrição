@@ -24,14 +24,36 @@
                <h2 align="left">INSCRIÇÃO</h2>
             <form>
                
-               NOME COMPLETO:<br><hr>
-               <input type="number" name="NOME"><br><hr>
-               TLEFONE:<br>
-               <input type="number" name="telefone"><br><hr>
-               <input type="radio" name="sexo" value="M">Masculino<br> 
-               <input type="password" name="senha"><br>
+               <fieldset>
+                <legend>
+                    DADOS
+                </legend>
+               NOME COMPLETO:
+               <input type="text" name="NOME">
+               CPF:
+               <input type="number" name="NOME">
+               TELEFONE:
+               <input type="number" name="telefone">
+               </fieldset><br>
+               <fieldset>
+                <legend>
+                    QUAL O SEU GÊNERO
+                </legend>
+               <input type="radio" name="sexo" value="M">Masculino<br>
+               <input type="radio" name="sexo" value="F">Feminino<br>
+               <input type="radio" name="sexo" value="O">Outro<br>
+               </fieldset><br>
+               <fieldset>
+                <legend>
+                    DIGITE SEU EMAIL
+                </legend>
+               <input type="email" name="email"><br><hr>
+               </fieldset>  
 
-               <br><input type="submit" value="cadastrar"></br>
+
+               
+
+               
                
               
             </form>
