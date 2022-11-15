@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina inicial</title>
+</head>
+
+<body background="img/fundo.png">
+    <table border="0" width ="900" align="center">
+        <tr>
+            <td height="89"><img src="img/softex_pernambuco.png"> </td>
+         <td align="right">
+            <a href="index.html"><strong>HOME |</strong></a>
+            <a href="quem_somos.html"><strong>QUEM SOMOS |</strong></a>
+            <a href="contatos.html"><strong>CONTATOS |</strong></a>
+            <a href="inscricao.html"><strong>INSCRIÇÃO |</strong></a>
+            <a href="login.html"><strong>LOGIN |</strong></a>
+        
+         </td>
+    
+        </tr>
+        
+        <tr>
+            <td colspan="2" align="left">
+               <h2 align="left">INSCRIÇÃO</h2>
+            <form>
+               
+               <fieldset>
+                <legend>
+                    DADOS
+                </legend>
+               NOME COMPLETO:
+               <input  type="text" name="NOME" placeholder="USE LETRAS MAIÚSCULAS">
+               CPF:
+               <input  type="number" id="CPF" name="CPF" pattern="[0-9]{.}{.}{-}" placeholder="XXX.XXX.XXX-XX"/>
+               TELEFONE:
+               <input type="number" name="telefone" placeholder="(XX)9XXXX-XXXX">
+               </fieldset><br>
+               <fieldset>
+                <legend>
+                    QUAL O SEU GÊNERO
+                </legend>
+               <input type="radio" name="sexo" value="M">Masculino<br>
+               <input type="radio" name="sexo" value="F">Feminino<br>
+               <input type="radio" name="sexo" value="O">Outro<br>
+               </fieldset><br>
+               <fieldset>
+                <legend>
+                    DIGITE SEU EMAIL
+                </legend>
+               <input type="email" name="email" placeholder="xxxxx@xxx.com"><br><hr>
+               </fieldset>  
+
+
+               
+
+               
+               
+              
+            </form>
+
+           </td>
+       </tr>
+    </body>
+    
+  
