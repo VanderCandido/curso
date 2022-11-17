@@ -32,11 +32,11 @@
                     DADOS
                 </legend>
                NOME COMPLETO:
-               <input  type="text" name="NOME" placeholder="USE LETRAS MAIÚSCULAS">
+               <input  type="text" name="NOME" pattern="[A-Z]+ "placeholder="USE LETRAS MAIÚSCULAS">
                CPF:
-               <input  type="number" id="CPF" name="CPF" pattern="[0-9]{.}{.}{-}" placeholder="XXX.XXX.XXX-XX"/>
+               <input  type="number" id="CPF" name="CPF" pattern="\d{3}.\d{3}.\d{3}-\d{2}" placeholder="XXX.XXX.XXX-XX"/>
                TELEFONE:
-               <input type="number" name="telefone" placeholder="(XX)9XXXX-XXXX">
+               <input type="number" name="telefone" pattern="\d{2}\d{4,5}-\d{4}" placeholder="(XX)9XXXX-XXXX">
                </fieldset><br>
                <fieldset>
                 <legend>
@@ -50,7 +50,7 @@
                 <legend>
                     DIGITE SEU EMAIL
                 </legend>
-               <input type="email" name="email" placeholder="xxxxx@xxx.com"><br><hr>
+               <input type="email" name="email" pattern="[a-z0-9]+@provedor+[a-z]{2,3}" placeholder="xxxxx@xxx.com"><br><hr>
                </fieldset>  
 
 
@@ -65,4 +65,3 @@
        </tr>
     </body>
     
-  
