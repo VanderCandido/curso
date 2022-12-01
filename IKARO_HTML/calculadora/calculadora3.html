@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var input = document.querySelector("#display");
+        var operador = "";
+        var parar = false;
+        
+        function limpar() {
+          input.value = "";
+          document.querySelector("#history").innerHTML = "";
+          operador = ""
+        }
+        
+        function add_numero(string) {
+          if (!parar) {
+            if (string === '.' && input.value.indexOf(".") === -1 || string !== '.') {
+              input.value = input.value + string;
+              history.value = input.value;
+            }
+          } else {
+            if (string === '.' && input.value.indexOf(".") === -1 || string !== '.') {
+              input.value = "";
+              parar = false;
+              document.querySelector("#history").innerHTML = "";
+              operador = "";
+        
+              input.value = input.value + string;
+            }
+          }
+        }
+        
+        function add_operador(op) {
+          if (input.value == "") {
+            input.value = "0";
+          }
+        
+          if (operador == "") {
+            operador = op;
+            input.value = input.value + op;
+          } else {
+            total()
+            input.value = input.value + op;
+            operador = op;
+            parar=false;
+          }
+        }
+        
+        function total() {
+          if (!parar) {
+            numeros = input.value.split(operador);
+        
+            if (numeros[1] == "") {
+              input.value = input.value + '0';
+              numeros[1] = 0;
+        
+            }
+        
+            document.querySelector("#history").innerHTML = input.value;
+        
+            switch (operador) {
+              case "+":
+                input.value = Number(numeros[0]) + Number(numeros[1]);
+                break;
+        
+              case "-":
+                input.value = numeros[0] - numeros[1];
+                break;
+        
+              case "*":
+                input.value = numeros[0] * numeros[1];
+                break;
+        
+              case "/":
+                input.value = numeros[0] / numeros[1];
+                break;
+            }
+        
+            parar = true;
+          }
+        }
+    </script>
+    
+
+
+<div class="calculator">
+
+    
+    <div class="display">
+        <input id="display" placeholder="0" disabled>
+        <h2 id="history"></h2>
+    </div>
+
+    
+    <div class="row">
+        <button class="button purple-text" onclick="limpar()">AC</button>
+        <div></div>
+        <div></div>
+        <button class="button gray" onclick="add_operador('/')">/</button>
+    </div>
+
+    <div class="row">
+        <button class="button" onclick="add_numero(7)">7</button>
+        <button class="button" onclick="add_numero(8)">8</button>
+        <button class="button" onclick="add_numero(9)">9</button>
+        <button class="button gray" onclick="add_operador('*')">*</button>
+    </div>
+
+    <div class="row">
+        <button class="button" onclick="add_numero(4)">4</button>
+        <button class="button" onclick="add_numero(5)">5</button>
+        <button class="button" onclick="add_numero(6)">6</button>
+        <button class="button gray" onclick="add_operador('-')">-</button>
+    </div>
+
+    <div class="row">
+        <button class="button" onclick="add_numero(1)">1</button>
+        <button class="button" onclick="add_numero(2)">2</button>
+        <button class="button" onclick="add_numero(3)">3</button>
+        <button class="button gray" onclick="add_operador('+')">+</button>
+    </div>
+
+    <div class="row">
+        <div></div>
+        <button class="button" onclick="add_numero(0)">0</button>
+        <button class="button" onclick="add_numero('.')">.</button>
+        <button class="button purple" onclick="total()">=</button>
+    </div>
+   
+</div>
+
+
+
+</body>
+
+</html>
