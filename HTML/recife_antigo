@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina inicial</title>
+    <style>
+        body{
+            background-color: rgb(174, 188, 228); 
+        }
+</head>
+
+<body background="img/fundo.png">
+    <table border="0" width ="900" align="center">
+        <tr>
+            <td height="89"><img src="img/recife_antigo.png"> </td>
+        <td align="right">
+            <a href="index.html"><strong>HOME |</strong></a>
+            <a href="marcozero.html"><strong>MARCO ZERO |</strong></a>
+            <a href="recifeantigo.html"><strong>RECIFE ANTIGO |</strong></a>
+           
+        </td>
+        
+    </tr>
+    
+    <tr>
+        <td colspan="2">
+            <img src="img/recife_antigo2.jpg">
+        </td>
+    </tr>
+    <td colspan="2">
+        <h2 align="center">Conheça um pouco sobre o Recife Antigo</h2>
+        <h4><b>RECIFE ANTIGO</b><br><br>A Praça Rio Branco, Recife Antigo, é um bairro da cidade do Recife, Pernambuco, Brasil que corresponde à parte leste do seu Centro Histórico. Em seu ponto mais oriental, no Porto do Recife, situa-se a Praça Rio Branco – o Marco Zero, margeada pelo encontro dos rios Capibaribe e Beberibe com o Oceano Atlântico.</h4>
+        
+    </td>
+    <tr>
+
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+            <h6 >TODOS OS DIREITOS RESERVADOS</h6>
+
+        </td>
+    </tr>
+    
+    </table>
+    <footer>
+        <div class="rodape">
+            <h6>este é um site realizado por  Vander Candido pelo curso da SOFTEX Pernambuco!</h6>
+        </div>
+    </footer>
+    
+</body>
+</html>
