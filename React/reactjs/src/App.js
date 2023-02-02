@@ -17,6 +17,7 @@ function App() {
         >
           Learn React
         </a>
+         VANDER (ALUNO DA SOFTEX)
       </header>
     </div>
   );
